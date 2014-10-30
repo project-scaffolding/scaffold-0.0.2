@@ -16,5 +16,17 @@ As a rule, the data access layer should create and manage all connections to all
 - **Reduce round trips.**
 - **Consider performance and scalability objectives.**
 
+### Specific Design Issues ###
+- **Batching**
+- **Connections**
+- **Data Format**
+- **Exception Management**
+- **Object Relational Mapping**
+- **Queries**
+
+### Connections ###
+Connections to data sources are a fundamental part of the data layer. All data source connections should be managed by the data layer. Creating and managing connections uses valuable resources in both the data layer and the data source.
+
+
 ### Relevant Design Patterns ###
 - General (Active Record, Data Mapper, Data Transfer Object, Domain Model, Query Object, Repository, Row Data Gateway, Table Data Gateway)
